@@ -1,0 +1,76 @@
+@import "compass";
+@import "constants";
+
+div.tooltip {
+    @include border-radius(5px);
+    @include box-shadow(7px, #000);
+    $tail-color: rgba(0,0,0,0.8);
+    $tail-size: 12px;
+
+    background: rgba(0,0,0,0.8);
+    color: #FFF;
+    padding: 5px;
+    position: absolute;
+    height: auto;
+    width: 0px;
+
+
+    div.tail {
+        position: absolute;
+        padding: 0;
+        width: 0px;
+        height: 0px;
+        border: $tail-size solid transparent; }
+
+    /* The lol-iest of hacks.
+     * If we just give .tail a box-shadow, the box extends beyond the triangle.
+     * By creating a smaller box within the tail and giving *that* a shadow, we get the shadow we want. */
+    div.shadow {
+        width: 0px;
+        height: 10px;
+        @include box-shadow(12px, #000);
+        position:absolute; }
+
+    &.right .tail {
+        border-left: none;
+        border-right-color: $tail-color;
+        right: 100%;
+        top: 50%;
+        margin-top: -$tail-size;
+
+        .shadow {
+            top: -5px;
+            left: 4px } }
+
+    &.left .tail {
+        border-right: none;
+        border-left-color: $tail-color;
+        left: 100%;
+        top: 50%;
+        margin-top: -$tail-size;
+
+        .shadow {
+            top: -5px;
+            right: 4px } }
+
+    &.top .tail {
+        border-bottom: none;
+        border-top-color: $tail-color;
+        top: 100%;
+        left: 50%;
+        margin-left: -$tail-size;
+
+        .shadow {
+            left: -5px;
+            bottom: 4px;  } }
+
+    &.bottom .tail {
+        border-top: none;
+        border-bottom-color: $tail-color;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -$tail-size;
+
+        .shadow {
+            left: -5px;
+            top: 4px;  } } }
