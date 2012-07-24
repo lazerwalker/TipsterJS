@@ -1,14 +1,15 @@
 ## Tipster (Yet Another jQuery Tooltip Plugin)
 
-This is a small JS library for creating small pop-up dialogs that refer to a parent element. You can use it to create both hover-only tooltips (a la Facebook or [Tipsy](http://onehackoranother.com/projects/jquery/tipsy/)) and more full-featured iPad-style popovers or hovercards. It's designed to be both lightweight (~4kb minified) and flexible; it's ultra-configurable, touch-friendly, and easily re-styleable via pure CSS.
+Tipster is a small JS library for creating pop-up dialogs that refer to a parent element. It can create both hover tooltips (a la Facebook or [Tipsy](http://onehackoranother.com/projects/jquery/tipsy/)) and more full-featured iPad-style popovers or hovercards. It's designed to be both lightweight (~4kb minified) and flexible. It's ultra-configurable, touch-friendly, and easily re-styleable via pure CSS.
 
-Usage instructions can be found in the un-minified jquery.tooltip.js file. The included CSS/SASS provides a sane default styling for a semi-translucent black tooltip (a la Facebook or Github), including a pretty nifty hack to give the tail a drop-shadow purely in CSS; however, Tipster will function fine if you want to modify the CSS or replace it entirely.
+Usage instructions can be found in the un-minified jquery.tooltip.js file. The included CSS/SASS provides a sane default styling for a semi-translucent black tooltip (a la Facebook or Github), including a pretty nifty hack to give the tail a drop-shadow purely in CSS. However, Tipster will function fine if you want to modify the CSS or replace it entirely.
 
-I gladly accept pull requests.
+I gladly accept pull requests. Feel free to get in touch for any other reason as well at michael@lazerwalker.com.
 
 ## License
-jQuery Tooltip is licensed under the MIT license.
-Copyright (c) 2012 Michael Lazer-Walker
+Tipster is licensed under the MIT license.
+
+Copyright (c) 2012 Michael Walker
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

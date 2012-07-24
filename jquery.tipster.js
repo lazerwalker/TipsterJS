@@ -1,5 +1,5 @@
 /* Tipster.js
- * Michael Lazer-Walker
+ * Michael Walker
  * https://github.com/lazerwalker/tipster-js
  * Licensed under the MIT License
  *
@@ -67,8 +67,9 @@
       // Accepts either an HTML string or function that returns an HTML string
       content: '',
 
-      // If you want to load in content as an HTML attribute, set this to the
-      // attribute you want to read. Any valid HTML attribute will work.
+      // If you want to load in content as an HTML attribute, set this to a
+      // string containing the name of the attribute you want to read.
+      // Any valid HTML attribute will work (e.g. 'title', 'data-tooltip')
       attribute: undefined,
 
       // Which side of the parent the tooltip appears on
